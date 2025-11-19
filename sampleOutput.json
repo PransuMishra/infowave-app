@@ -1,0 +1,58 @@
+{
+  "status": "ok",
+  "totalResults": 4,
+  "articles": [
+    {
+      "source": {
+        "id": "al-jazeera-english",
+        "name": "Al Jazeera English"
+      },
+      "author": "Hafsa Adil",
+      "title": "Cricket: Hundreds of India vs Pakistan Asia Cup tickets unsold",
+      "description": "Fans and experts blame hot weather and lingering tensions between both nations for unusual ticket sales.",
+      "url": "https://www.aljazeera.com/sports/2025/9/14/cricket-hundreds-of-india-vs-pakistan-asia-cup-tickets-unsold",
+      "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2025/02/AFP__20250223__36YG9AY__v1__HighRes__CricketCt2025PakInd-1740301601.jpg?resize=1920%2C1440",
+      "publishedAt": "2025-09-14T07:38:48Z",
+      "content": "Dubai, United Arab Emirates Dozens of tickets for the India vs Pakistan cricket match at the Asia Cup 2025 in Dubai remain unsold on the morning of the fixture, a rare occurrence for a cricket match … [+2430 chars]"
+    },
+    {
+      "source": {
+        "id": "nbc-news",
+        "name": "NBC News"
+      },
+      "author": "Jay Ganglani",
+      "title": "Asia Cup: Cricket teams from India and Pakistan meet for the first time since armed conflict in May",
+      "description": "As many as 500 million people could tune in to watch a cricket match between bitter rivals India and Pakistan, a number that would dwarf the viewership numbers set by this year’s Super Bowl nearly four times over.",
+      "url": "https://www.nbcnews.com/world/asia/india-pakistan-asia-cup-cricket-rcna230758",
+      "urlToImage": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2025-09/250912-pakistan-india-cricket-mb-0944-c11c46.jpg",
+      "publishedAt": "2025-09-14T07:00:00Z",
+      "content": "Due to political tensions, the two nations have rarely played against each other in recent years, Shah said.\r\nSince late July, when the match was first announced, social media users in both countries… [+2522 chars]"
+    },
+    {
+      "source": {
+        "id": "espn-cric-info",
+        "name": "ESPN Cric Info"
+      },
+      "author": null,
+      "title": "PCB hands Umar Akmal three-year ban from all cricket | ESPNcricinfo.com",
+      "description": "Penalty after the batsman pleaded guilty to not reporting corrupt approaches | ESPNcricinfo.com",
+      "url": "http://www.espncricinfo.com/story/_/id/29103103/pcb-hands-umar-akmal-three-year-ban-all-cricket",
+      "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1099495_800x450.jpg",
+      "publishedAt": "2020-04-27T11:41:47Z",
+      "content": "Umar Akmal's troubled cricket career has hit its biggest roadblock yet, with the PCB handing him a ban from all representative cricket for three years after he pleaded guilty of failing to report det… [+1506 chars]"
+    },
+    {
+      "source": {
+        "id": "espn-cric-info",
+        "name": "ESPN Cric Info"
+      },
+      "author": null,
+      "title": "What we learned from watching the 1992 World Cup final in full again | ESPNcricinfo.com",
+      "description": "Wides, lbw calls, swing - plenty of things were different in white-ball cricket back then | ESPNcricinfo.com",
+      "url": "http://www.espncricinfo.com/story/_/id/28970907/learned-watching-1992-world-cup-final-full-again",
+      "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1219926_1296x729.jpg",
+      "publishedAt": "2020-03-30T15:26:05Z",
+      "content": "Last week, we at ESPNcricinfo did something we have been thinking of doing for eight years now: pretend-live ball-by-ball commentary for a classic cricket match. We knew the result, yes, but we tried… [+6823 chars]"
+    }
+  ]
+}
