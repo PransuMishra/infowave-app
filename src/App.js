@@ -11,8 +11,7 @@ import LoadingBar from 'react-top-loading-bar'
 const App =()=> {
   const pageSize = 10;
 
-  const apiKey = process.env.REACT_APP_NEWS_API
-
+  const apiKey = '48c4c58bf9ce4a73930618ad52187c4b'
   const [progress, setProgress] = useState(0);
   const [searchQuery, setSearchQuery] = useState(null);
   const [mode, setMode] = useState('light');
