@@ -1,46 +1,41 @@
-// import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState } from "react";
+import NavBar from "./component/NavBar";
+import News from "./component/News";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import LoadingBar from "react-top-loading-bar";
 
-import React, {useState} from 'react';
-import NavBar from './component/NavBar';
-import News from './component/News';
-import {BrowserRouter as Router, Routes, Route,} from "react-router-dom";
-
-import LoadingBar from 'react-top-loading-bar'
-
-const App =()=> {
+const App = () => {
   const pageSize = 10;
+  const apiKey = process.env.REACT_APP_NEWS_API || "MOCK_KEY_FOR_LOCAL_TESTING";
 
-  const apiKey = '48c4c58bf9ce4a73930618ad52187c4b'
   const [progress, setProgress] = useState(0);
   const [searchQuery, setSearchQuery] = useState(null);
-  const [mode, setMode] = useState('light');
+  const [mode, setMode] = useState("light");
 
   const handleSearch = (query) => {
-        setSearchQuery(query);
-    };
+    setSearchQuery(query);
+  };
 
   const resetSearch = () => {
     setSearchQuery(null);
-  }
-
+  };
 
   const toggleMode = () => {
-    if (mode === 'light') {
-      setMode('dark');
-      document.body.style.backgroundColor = '#212529'; 
-      document.body.style.color = '#f8f9fa';
+    if (mode === "light") {
+      setMode("dark");
+      document.body.style.backgroundColor = "#1A1A1D";
+      document.body.style.color = "#f8f9fa";
     } else {
-      setMode('light');
-      document.body.style.backgroundColor = 'white';
-      document.body.style.color = 'black'; 
+      setMode("light");
+      document.body.style.backgroundColor = "white";
+      document.body.style.color = "black";
     }
-  }
-  
-  
-    return (
-      <div style={{backgroundColor: mode === 'dark' ? '#212529' : 'white', color: mode === 'dark' ? '#f8f9fa' : 'black'}}>
-        <Router>
+  };
+
+  return (
+      <div style={{backgroundColor: mode === 'dark' ? '#1A1A1D' : 'white', color: mode === 'dark' ? '#f8f9fa' : 'black'}}>
+        <Router> 
         <NavBar onSearch={handleSearch} resetSearch={resetSearch} mode={mode} toggleMode={toggleMode}/>
         <LoadingBar
             color="#f11946"
