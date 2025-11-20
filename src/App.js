@@ -7,7 +7,7 @@ import LoadingBar from "react-top-loading-bar";
 
 const App = () => {
   const pageSize = 10;
-  const apiKey = process.env.REACT_APP_NEWS_API || "MOCK_KEY_FOR_LOCAL_TESTING";
+  const apiKey = process.env.REACT_APP_NEWS_API;
 
   const [progress, setProgress] = useState(0);
   const [searchQuery, setSearchQuery] = useState(null);
