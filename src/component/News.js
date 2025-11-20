@@ -19,15 +19,15 @@ import InfiniteScroll from "react-infinite-scroll-component";
  
     const fetchArticles = async (currentPage, isMore = false) => {
         props.setProgress(30);
-        
-        let url = props.searchQuery ? 
+
+        let url = props.searchQuery ?
             `https://newsapi.org/v2/everything?q=${props.searchQuery}&apikey=${props.apiKey}&page=${currentPage}&pageSize=${props.pageSize}&sortBy=publishedAt` :
             `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apikey=${props.apiKey}&page=${currentPage}&pageSize=${props.pageSize}`;
-        
+
         if(!isMore) {
             setLoading(true);
         }
-        const minLoadTime = 700; 
+        const minLoadTime = 700;
         const delayPromise = new Promise(resolve => setTimeout(resolve, minLoadTime));
 
         let data = await fetch(url);
@@ -40,14 +40,14 @@ import InfiniteScroll from "react-infinite-scroll-component";
         if (isMore && newArticles.length === 0) {
             setApiExhausted(true);
         }
-        
+
         if (isMore) {
             setArticles(prevArticles => prevArticles.concat(newArticles));
         } else {
             setArticles(newArticles);
-            setApiExhausted(false); 
+            setApiExhausted(false);
         }
-        
+
         setTotalResults(parsedData.totalResults || 0);
 
         if (!isMore) {
